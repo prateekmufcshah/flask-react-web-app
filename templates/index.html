@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+   <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{ url_for('static', filename= 'css/style.css') }}">
+    <title>FlaskBlog</title>
+	<script src="{{ url_for('static', filename='js/test.js') }}"></script>
+</head>
+   <body>
+     <h1>Welcome to Flask
+	 <form action="/greet" method="POST" onsubmit="handleFormSubmit(event)">
+	  <div class="form-group">
+		<input type="text" name="name" class="form-field" type="email" placeholder="Email" />
+		<span>@gmail.com</span>
+		<button class="button-1" type="submit">Submit</button> 
+	  </div>
+      
+	  </h1>
+	  <div id="output" style="margin-top: 20px; font-size: 16px; color: green; white-space: pre;"></div>
+    </form>
+   </body>
+</html>
